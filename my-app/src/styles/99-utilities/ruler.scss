@@ -1,0 +1,23 @@
+@import '../settings';
+
+/* =================================
+   #RULER
+
+   Utility classes to create horizontal and vertical rulers
+   ================================= */
+
+/**
+ * Example use:
+ *
+ * <hr className="u-hr" />
+ * <hr className="u-hr-layer2" />
+ *
+ */
+
+.u-hr {
+	border-color: $colorBorderNeutralLayer1;
+}
+
+.u-hr-layer2 {
+	border-color: $colorBorderNeutralLayer2;
+}

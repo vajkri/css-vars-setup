@@ -1,0 +1,23 @@
+@import '../settings';
+
+html {
+	background-color: $colorSceneNeutral;
+	font-family: $fontFamily;
+	font-size: $fontSizeRemBase;
+	line-height: $lineHeightLg;
+	color: $colorTextLight;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	@include mq('sm') {
+		font-size: $fontSizeRemBaseDesktop;
+	}
+}
+
+// Adds support setting footer display to sticky,
+// so it is always in the bottom
+html,
+body,
+#react-app {
+	height: 100%;
+}

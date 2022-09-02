@@ -1,0 +1,33 @@
+@import '../settings';
+
+/* =================================
+   #SPINNER
+
+   Utility class to create a spinner element with animation
+   ================================= */
+
+/**
+ * Example use:
+ *
+ * <span className="u-spinner" />
+ *
+ */
+
+.u-spinner {
+	width: $iconSizeMd;
+	height: $iconSizeMd;
+
+	position: absolute;
+
+	border: $borderSizeMd solid currentColor;
+	border-top-color: transparent;
+	border-radius: 50%;
+
+	animation: spin 1s infinite linear;
+
+	@keyframes spin {
+		to {
+			transform: rotate(360deg);
+		}
+	}
+}

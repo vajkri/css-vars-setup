@@ -1,0 +1,9 @@
+// Duration
+$transTimeSm: 150ms !default;
+$transTimeBase: 250ms !default;
+$transTimeLg: 400ms !default;
+
+// Easing
+$easeBase: cubic-bezier(0.73, 0.09, 0.21, 0.96) !default;
+$easeElastic: cubic-bezier(0.68, -0.55, 0.265, 1.55) !default;
+$easeElasticSubtle: cubic-bezier(0.53, -0.38, 0.285, 1.33) !default;

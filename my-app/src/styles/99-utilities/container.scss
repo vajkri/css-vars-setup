@@ -1,0 +1,26 @@
+@import '../settings';
+
+/* =================================
+   #CONTAINER
+   ================================= */
+
+/**
+ * Utility classes for constraining widths of elements and centering them
+ */
+
+.u-container-xs {
+	@include container('xs');
+}
+
+.u-container-sm {
+	@include container('sm');
+}
+
+.u-container,
+.u-container-md {
+	@include container();
+}
+
+.u-container-lg {
+	@include container('lg');
+}

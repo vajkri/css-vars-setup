@@ -1,0 +1,126 @@
+@import '../01-settings/colors';
+@import '../01-settings/motion';
+@import '../01-settings/sizes';
+@import '../01-settings/spacing';
+@import '../01-settings/typography';
+@import './media';
+
+// Button mixin
+// Use this to add button styles to elements
+//
+// Styles are necessary to be in a mixin,
+// so they can be used both by Button component
+// and buttons inside CMS
+
+$buttonFontSize: $fontSizeMd;
+
+@mixin button() {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	gap: $spacing2Xs;
+	min-height: $buttonHeightMd;
+	padding: 0 $spacingLg;
+
+	position: relative;
+
+	background-color: $colorSurfaceStatePrimary;
+	border: $borderSizeSm solid $colorSurfacePrimarySubdued;
+	border-radius: $borderRadiusMd;
+
+	color: $colorTextLight;
+	font-size: $buttonFontSize;
+	font-weight: $fontWeightBold;
+	line-height: 1;
+
+	transition: background-color $easeBase $transTimeSm;
+
+	@include mqHover {
+		&:hover {
+			background: $colorSurfaceStatePrimaryHover;
+		}
+	}
+
+	&:active {
+		background: $colorSurfaceStatePrimaryPressed;
+	}
+
+	&:focus,
+	&:focus-visible {
+		outline-width: 3px;
+		outline-color: $colorOutlineUtility;
+	}
+
+	&:disabled,
+	&.disabled {
+		pointer-events: none;
+		cursor: default;
+		opacity: $opacityDisabled;
+	}
+}
+
+// Variant mixins
+@mixin buttonVariant($variant) {
+	@if $variant == 'secondary' {
+		background-color: $colorSurfaceStateNeutralTranslucent;
+		border-color: $colorSurfaceNeutralLayer3;
+
+		@include mqHover {
+			&:hover {
+				background: $colorSurfaceStateNeutralTranslucentHover;
+			}
+		}
+
+		&:active {
+			background: $colorSurfaceStateNeutralTranslucentPressed;
+		}
+	}
+
+	@if $variant == 'ghost' {
+		background-color: transparent;
+		border-color: transparent;
+
+		@include mqHover {
+			&:hover {
+				background: $colorSurfaceStateLightTranslucentHover;
+			}
+		}
+
+		&:active {
+			background: $colorSurfaceStateLightTranslucentPressed;
+		}
+	}
+
+	@if $variant == 'linkButton' {
+		padding-left: 0;
+		padding-right: 0;
+
+		background-color: transparent;
+		border-color: transparent;
+
+		font-weight: $fontWeightRegular;
+
+		&::after {
+			content: '';
+			width: 100%;
+			height: $borderSizeSm;
+
+			position: absolute;
+			top: calc(50% + calc(#{$buttonFontSize} - 4px));
+			left: 0;
+
+			background: $colorBorderNeutralLayer2; // TODO: fix in DS after design review
+
+			transition: background-color $easeBase $transTimeSm;
+		}
+
+		&:hover,
+		&:active {
+			background-color: transparent;
+
+			&::after {
+				background: $colorBorderStateNeutralActive; // TODO: fix in DS
+			}
+		}
+	}
+}

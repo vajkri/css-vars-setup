@@ -1,0 +1,48 @@
+/* =================================
+   index.scss
+
+   Imports layers that generate "global" styles
+   and that gets compiled to css
+   (except for component styles,
+   which reside with components)
+   ================================= */
+
+// Adjust font-size for fallback font to decrease layout shift
+@font-face {
+	font-family: Arial;
+	src: local('Arial');
+	size-adjust: 107%;
+}
+
+/**
+ * #3 - GENERIC
+ */
+@import '03-generic/box-sizing';
+@import '03-generic/normalize';
+@import '03-generic/outline';
+@import '03-generic/reset';
+
+/**
+ * #4 - ELEMENTS
+ */
+@import '04-elements/anchor';
+@import '04-elements/button';
+@import '04-elements/headings';
+@import '04-elements/hr';
+@import '04-elements/iframe';
+@import '04-elements/image';
+@import '04-elements/list';
+@import '04-elements/page';
+@import '04-elements/pre';
+
+/**
+ * #99 - UTILITIES
+ */
+@import '99-utilities/container';
+@import '99-utilities/ellipsis';
+@import '99-utilities/grid';
+@import '99-utilities/hide-show';
+@import '99-utilities/ruler';
+@import '99-utilities/scroll-wrapper';
+@import '99-utilities/spacings';
+@import '99-utilities/spinner';

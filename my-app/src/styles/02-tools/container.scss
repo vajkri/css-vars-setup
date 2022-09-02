@@ -1,0 +1,27 @@
+@import '../01-settings/sizes';
+@import '../01-settings/spacing';
+@import './media';
+
+// Container mixins
+// Used for constraining widths of elements and centering them
+//
+// Use mixins only, if utility classes are not an option
+// (e.g. due to need for media queries)
+
+$containerSizes: (
+	'xs': $contentWidthXs,
+	'sm': $contentWidthSm,
+	'md': $contentWidthMd,
+	'lg': $contentWidthLg,
+) !default;
+
+@mixin container($size: 'md') {
+	width: calc(100% - #{$spacingMd * 2});
+	max-width: map_get($containerSizes, $size);
+	margin-left: auto;
+	margin-right: auto;
+
+	@include mq('md') {
+		width: calc(100% - #{$spacingLg * 2});
+	}
+}

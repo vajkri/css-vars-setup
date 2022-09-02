@@ -1,0 +1,9 @@
+node_modules
+package.json
+.editorconfig
+*.yml
+*.yaml
+*.sh
+*.lock
+.*ignore
+*.log

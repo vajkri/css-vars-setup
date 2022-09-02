@@ -1,0 +1,6 @@
+@import '../settings';
+
+hr {
+	border: none;
+	border-top: $borderSizeSm solid $colorBorderNeutralLayer1;
+}

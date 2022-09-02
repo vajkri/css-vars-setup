@@ -1,0 +1,49 @@
+// Tint function
+// Used for slightly lightening a color
+//
+// @param {Color} $color - color to tint
+// @param {Number} $percentage - percentage of `$color` in returned color
+// @return {Color}
+@function tint($color, $percentage) {
+	@return mix(white, $color, $percentage);
+}
+
+// Tint function with hover state overlay
+@function tintHover($color) {
+	@return tint($color, $overlayTintHover);
+}
+
+// Tint function with focus state overlay
+@function tintFocus($color) {
+	@return tint($color, $overlayTintFocus);
+}
+
+// Tint function with pressed state overlay
+@function tintPressed($color) {
+	@return tint($color, $overlayTintPressed);
+}
+
+// Shade function
+// Used for slightly darkening a color
+//
+// @param {Color} $color - color to shade
+// @param {Number} $percentage - percentage of `$color` in returned color
+// @return {Color}
+@function shade($color, $percentage) {
+	@return mix(black, $color, $percentage);
+}
+
+// Shade function with hover state overlay
+@function shadeHover($color) {
+	@return shade($color, $overlayShadeHover);
+}
+
+// Shade function with focus state overlay
+@function shadeFocus($color) {
+	@return shade($color, $overlayShadeFocus);
+}
+
+// Shade function with active state overlay
+@function shadePressed($color) {
+	@return shade($color, $overlayShadePressed);
+}

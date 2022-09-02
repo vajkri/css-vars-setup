@@ -1,0 +1,24 @@
+@import '../02-tools/remove-px';
+
+$breakpoints: (
+	'xs': 360px,
+	'sm': 768px,
+	'md': 1024px,
+	'lg': 1320px,
+	'xl': 1600px,
+) !default;
+
+// See implementation of these in 02-tools/media.scss
+
+// Export breakpoints to js:
+:export {
+	xs: remove-px(map-get($breakpoints, 'xs'));
+	sm: remove-px(map-get($breakpoints, 'sm'));
+	md: remove-px(map-get($breakpoints, 'md'));
+	lg: remove-px(map-get($breakpoints, 'lg'));
+	xl: remove-px(map-get($breakpoints, 'xl'));
+}
+
+// Global component breakpoints
+$layoutSwitchThumbs: 'md';
+$layoutSwitchPDP: 'sm';

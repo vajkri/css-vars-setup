@@ -1,0 +1,33 @@
+// Z-index values
+//
+// We define our z-index values in constants
+// to remove the magic numbers.
+//
+// We can use the previous constants to make
+// the next constant.
+// That way we also make components' relationship
+// to each other more apparent.
+//
+// More info:
+// https://www.smashingmagazine.com/2021/02/css-z-index-large-projects/
+
+$zIndexBase: 0 !default;
+$zIndexAbove: 1 !default; // use this for all values above the base
+$zIndexBelow: -1 !default; // use this for all values below the base
+
+// Components' z-index
+$zIndexSelect: $zIndexAbove + $zIndexBase;
+
+$zIndexDropdown: $zIndexAbove + $zIndexSelect;
+
+$zIndexOverlayContent: $zIndexAbove + $zIndexDropdown;
+
+$zIndexHeader: $zIndexAbove + $zIndexOverlayContent;
+$zIndexMobileMenu: $zIndexAbove + $zIndexOverlayContent;
+
+$zIndexOverlayFull: $zIndexAbove + $zIndexMobileMenu;
+
+$zIndexModal: $zIndexAbove + $zIndexOverlayFull;
+$zIndexQuickSearch: $zIndexAbove + $zIndexOverlayFull;
+
+$zIndexNotifications: $zIndexAbove + $zIndexModal;

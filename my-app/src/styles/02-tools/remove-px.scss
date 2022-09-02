@@ -1,0 +1,6 @@
+@use 'sass:math';
+
+// Remove px unit from variable
+@function remove-px($var) {
+	@return math.div($var, 1px);
+}

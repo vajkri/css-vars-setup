@@ -1,0 +1,86 @@
+@import '../02-tools/color-functions';
+
+/**
+ * Tier 1 - Color definitions
+
+   This tier doesn't care about how colors are used. It only defines them.
+   DON'T use this tier in components and global styles.
+ */
+
+// Brand colors
+$colorPrimary: #f36e24 !default;
+$colorPrimary80: #f58b50 !default;
+
+$colorSecondary: #ac374b !default;
+$colorSecondary80: #bd5f6f !default;
+
+$colorNeutral: #001c24 !default;
+$colorNeutral93: #1b3036 !default;
+$colorNeutral89: #24383e !default;
+$colorNeutral85: #2d4146 !default;
+$colorNeutral81: #36494e !default;
+$colorNeutral77: #3f5156 !default;
+$colorNeutral73: #49595e !default;
+$colorNeutral40: #8a9699 !default;
+
+// Utility colors
+$colorDark: #000000 !default;
+$colorDark50: #808080 !default;
+$colorDark10: #e6e6e6 !default;
+$colorLight: #ffffff !default;
+
+// Overlays
+$overlayShadeHover: 12% !default;
+$overlayShadeFocus: 16% !default;
+$overlayShadePressed: 20% !default;
+
+$overlayTintHover: 12% !default;
+$overlayTintFocus: 16% !default;
+$overlayTintPressed: 32% !default;
+
+// Misc
+$colorOverlay: rgba(0, 0, 0, 0.5) !default;
+
+/**
+ * Tier 2 - Color applications
+
+   This tier assigns colors defined in Tier 1 to specific purposes and applications.
+   Use THIS tier of tokens in components and global styles.
+ */
+
+// Text colors
+$colorTextLight: $colorLight !default;
+$colorTextLightSubdued: $colorNeutral40 !default;
+$colorTextPrimary: $colorPrimary !default;
+$colorTextPrimarySubdued: $colorPrimary80 !default;
+$colorTextSecondary: $colorSecondary !default;
+$colorTextSecondarySubdued: $colorSecondary80 !default;
+
+// Border colors
+$colorBorderNeutralLayer1: $colorNeutral93 !default;
+$colorBorderNeutralLayer2: $colorNeutral85 !default;
+$colorBorderPrimaryLayer1: $colorPrimary !default;
+$colorBorderPrimaryLayer2: $colorPrimary80 !default;
+
+// Opacity
+$opacityDisabled: 0.3;
+$opacityOverlay: 0.5;
+
+// Surface colors
+$colorSurfacePrimary: $colorPrimary !default;
+$colorSurfacePrimarySubdued: $colorPrimary80 !default;
+
+$colorSurfaceStatePrimary: $colorPrimary !default;
+$colorSurfaceStatePrimaryHover: tintHover($colorSurfaceStatePrimary) !default;
+$colorSurfaceStatePrimaryFocus: tintFocus($colorSurfaceStatePrimary) !default;
+$colorSurfaceStatePrimaryPressed: tintPressed($colorSurfaceStatePrimary) !default;
+
+$colorSurfaceStateUtility: $colorLight !default;
+$colorSurfaceStateUtilityHover: shadeHover($colorSurfaceStateUtility) !default;
+$colorSurfaceStateUtilityFocus: shadeFocus($colorSurfaceStateUtility) !default;
+$colorSurfaceStateUtilityPressed: shadePressed($colorSurfaceStateUtility) !default;
+$colorSurfaceStateUtilityActive: $colorPrimary !default;
+
+// Scene colors
+$colorSceneNeutral: $colorNeutral !default;
+$colorSceneNeutralSubdued: $colorNeutral93 !default;
