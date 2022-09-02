@@ -1,0 +1,13 @@
+.themeTwo {
+	/* THEME OVERRIDES */
+
+	// Tier 1
+	--colorPrimary: #d4f324;
+	--colorNeutral81: #66242f;
+
+	// Tier 2
+	--colorSceneNeutralSubdued: var(--colorNeutral81);
+
+	// Tier 3
+	--buttonPrimaryBackground: var(--colorSurfacePrimarySubdued);
+}

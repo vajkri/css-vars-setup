@@ -13,6 +13,23 @@
 	color: white;
 }
 
+.themingWrapper {
+	p {
+		padding: var(--spacingMd);
+		outline: 2px solid white;
+	}
+}
+
+.tier1 {
+	background: var(--colorPrimary);
+}
+.tier2 {
+	background: var(--colorSceneNeutralSubdued);
+}
+.tier3 {
+	background: var(--buttonPrimaryBackground);
+}
+
 .logo {
 	height: 40vmin;
 	pointer-events: none;

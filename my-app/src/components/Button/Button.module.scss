@@ -1,9 +1,13 @@
 @import 'src/styles/settings';
 
+:root {
+	--buttonPrimaryBackground: var(--colorSurfacePrimary);
+}
+
 .wrapper {
 	background: var(--colorDark50);
 
 	@include mq('md') {
-		background: var(--colorPrimary);
+		background: var(--buttonPrimaryBackground);
 	}
 }
