@@ -2,5 +2,5 @@
 
 hr {
 	border: none;
-	border-top: $borderSizeSm solid $colorBorderNeutralLayer1;
+	border-top: var(--borderSizeSm) solid var(--colorBorderNeutralLayer1);
 }

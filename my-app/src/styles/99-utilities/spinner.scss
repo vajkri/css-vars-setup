@@ -14,12 +14,12 @@
  */
 
 .u-spinner {
-	width: $iconSizeMd;
-	height: $iconSizeMd;
+	width: var(--iconSizeMd);
+	height: var(--iconSizeMd);
 
 	position: absolute;
 
-	border: $borderSizeMd solid currentColor;
+	border: var(--borderSizeMd) solid currentColor;
 	border-top-color: transparent;
 	border-radius: 50%;
 

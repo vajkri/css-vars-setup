@@ -1,28 +1,28 @@
-@use 'sass:math';
+:root {
+	// Font families
+	--fontFamily: 'Inter', Arial, sans-serif;
 
-// Font families
-$fontFamily: 'Inter', Arial, sans-serif !default;
+	// Font weights
+	--fontWeightRegular: 400;
+	--fontWeightMedium: 500;
+	--fontWeightBold: 700;
 
-// Font weights
-$fontWeightRegular: 400 !default;
-$fontWeightMedium: 500 !default;
-$fontWeightBold: 700 !default;
+	// Font sizes
+	--fontSizeRemBasePure: 14;
+	--fontSizeRemBase: calc(var(--fontSizeRemBasePure) * 1px);
+	--fontSizeRemBaseDesktop: calc(var(--fontSizeRemBasePure) * 1px);
 
-// Font sizes
-$fontSizeRemBasePure: 14 !default;
-$fontSizeRemBase: $fontSizeRemBasePure * 1px !default;
-$fontSizeRemBaseDesktop: $fontSizeRemBasePure * 1px !default;
+	--fontSizeH1: calc(calc(40 / var(--fontSizeRemBasePure)) * 1rem);
+	--fontSizeH2: calc(calc(32 / var(--fontSizeRemBasePure)) * 1rem);
+	--fontSizeH3: calc(calc(24 / var(--fontSizeRemBasePure)) * 1rem);
+	--fontSizeH4: calc(calc(20 / var(--fontSizeRemBasePure)) * 1rem);
+	--fontSizeH5: calc(calc(16 / var(--fontSizeRemBasePure)) * 1rem);
 
-$fontSizeH1: math.div(40, $fontSizeRemBasePure) * 1rem !default;
-$fontSizeH2: math.div(32, $fontSizeRemBasePure) * 1rem !default;
-$fontSizeH3: math.div(24, $fontSizeRemBasePure) * 1rem !default;
-$fontSizeH4: math.div(20, $fontSizeRemBasePure) * 1rem !default;
-$fontSizeH5: math.div(16, $fontSizeRemBasePure) * 1rem !default;
+	--fontSizeLg: calc(calc(16 / var(--fontSizeRemBasePure)) * 1rem);
+	--fontSizeMd: calc(calc(14 / var(--fontSizeRemBasePure)) * 1rem);
+	--fontSizeSm: calc(calc(12 / var(--fontSizeRemBasePure)) * 1rem);
 
-$fontSizeLg: math.div(16, $fontSizeRemBasePure) * 1rem !default;
-$fontSizeMd: math.div(14, $fontSizeRemBasePure) * 1rem !default;
-$fontSizeSm: math.div(12, $fontSizeRemBasePure) * 1rem !default;
-
-// Line heights
-$lineHeightLg: 1.5 !default;
-$lineHeightBase: 1.25 !default;
+	// Line heights
+	--lineHeightLg: 1.5;
+	--lineHeightBase: 1.25;
+}

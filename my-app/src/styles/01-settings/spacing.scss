@@ -1,14 +1,10 @@
-// Global spacing units
-$spacing2Xs: 4px !default;
-$spacingXs: 8px !default;
-$spacingSm: 12px !default;
-$spacingMd: 16px !default;
-$spacingLg: 24px !default;
-$spacingXl: 48px !default;
-$spacing2Xl: 64px !default;
-
-// Content top & bottom spacing on various page types
-$contentSpacingTop: $spacingXs;
-$contentSpacingTopDesktop: $spacingMd;
-$contentSpacingTopDesktopLg: $spacingXl; // When no breadcrumbs
-$contentSpacingBottom: $spacing2Xl;
+:root {
+	// Global spacing units
+	--spacing2Xs: 4px;
+	--spacingXs: 8px;
+	--spacingSm: 12px;
+	--spacingMd: 16px;
+	--spacingLg: 24px;
+	--spacingXl: 48px;
+	--spacing2Xl: 64px;
+}

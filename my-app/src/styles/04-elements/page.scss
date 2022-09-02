@@ -1,16 +1,16 @@
 @import '../settings';
 
 html {
-	background-color: $colorSceneNeutral;
-	font-family: $fontFamily;
-	font-size: $fontSizeRemBase;
-	line-height: $lineHeightLg;
-	color: $colorTextLight;
+	background-color: var(--colorSceneNeutral);
+	font-family: var(--fontFamily);
+	font-size: var(--fontSizeRemBase);
+	line-height: var(--lineHeightLg);
+	color: var(--colorTextLight);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
 	@include mq('sm') {
-		font-size: $fontSizeRemBaseDesktop;
+		font-size: var(--fontSizeRemBaseDesktop);
 	}
 }
 

@@ -15,11 +15,21 @@
 }
 
 /**
+ * #1 - SETTINGS
+ */
+@import './01-settings/breakpoints';
+@import './01-settings/colors';
+@import './01-settings/motion';
+@import './01-settings/sizes';
+@import './01-settings/spacing';
+@import './01-settings/typography';
+@import './01-settings/z-index';
+
+/**
  * #3 - GENERIC
  */
 @import '03-generic/box-sizing';
 @import '03-generic/normalize';
-@import '03-generic/outline';
 @import '03-generic/reset';
 
 /**
@@ -42,7 +52,6 @@
 @import '99-utilities/ellipsis';
 @import '99-utilities/grid';
 @import '99-utilities/hide-show';
-@import '99-utilities/ruler';
 @import '99-utilities/scroll-wrapper';
 @import '99-utilities/spacings';
 @import '99-utilities/spinner';

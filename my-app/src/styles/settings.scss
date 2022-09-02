@@ -7,20 +7,8 @@
    ================================= */
 
 /**
- * #1 - SETTINGS
- */
-@import './01-settings/breakpoints';
-@import './01-settings/colors';
-@import './01-settings/motion';
-@import './01-settings/sizes';
-@import './01-settings/spacing';
-@import './01-settings/typography';
-@import './01-settings/z-index';
-
-/**
  * #2 - TOOLS
  */
-@import '02-tools/button';
 @import '02-tools/color-functions';
 @import '02-tools/container';
 @import '02-tools/ellipsis';

@@ -1,5 +1,5 @@
-@import '../01-settings/typography';
 @import './hyphen';
+@import './media';
 
 // Heading mixins
 // Use these to add specific heading styles to elements
@@ -8,8 +8,8 @@
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
 
-	line-height: $lineHeightBase;
-	font-weight: $fontWeightBold;
+	line-height: var(--lineHeightBase);
+	font-weight: var(--fontWeightBold);
 
 	&:not(.no-hyphen) {
 		@include hyphen;
@@ -18,25 +18,25 @@
 
 @mixin h1() {
 	@include heading();
-	font-size: $fontSizeH1;
+	font-size: var(--fontSizeH1);
 }
 
 @mixin h2() {
 	@include heading();
-	font-size: $fontSizeH2;
+	font-size: var(--fontSizeH2);
 }
 
 @mixin h3() {
 	@include heading();
-	font-size: $fontSizeH3;
+	font-size: var(--fontSizeH3);
 }
 
 @mixin h4() {
 	@include heading();
-	font-size: $fontSizeH4;
+	font-size: var(--fontSizeH4);
 }
 
 @mixin h5() {
 	@include heading();
-	font-size: $fontSizeH5;
+	font-size: var(--fontSizeH5);
 }

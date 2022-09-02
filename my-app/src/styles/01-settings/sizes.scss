@@ -1,24 +1,24 @@
-@import './spacing';
+:root {
+	// Border & border radius size
+	--borderSizeSm: 1px;
+	--borderSizeMd: 2px;
+	--borderSizeLg: 4px;
 
-// Border & border radius size
-$borderSizeSm: 1px !default;
-$borderSizeMd: 2px !default;
-$borderSizeLg: 4px !default;
+	--borderRadiusSm: 4px;
+	--borderRadiusMd: 8px;
+	--borderRadiusLg: 12px;
+	--borderRadiusXl: 16px;
+	--borderRadius2Xl: 24px;
 
-$borderRadiusSm: 4px !default;
-$borderRadiusMd: 8px !default;
-$borderRadiusLg: 12px !default;
-$borderRadiusXl: 16px !default;
-$borderRadius2Xl: 24px !default;
+	// Focus outline size
+	--outlineSize: max(2px, 0.08em);
 
-// Focus outline size
-$outlineSize: max(2px, 0.08em) !default;
+	// Content width
+	--contentWidthXs: 400px;
+	--contentWidthSm: 800px;
+	--contentWidthMd: 1200px;
+	--contentWidthLg: 1440px;
 
-// Content width
-$contentWidthXs: 400px !default;
-$contentWidthSm: 800px !default;
-$contentWidthMd: 1200px !default;
-$contentWidthLg: 1440px !default;
-
-// Global component settings
-$iconSizeMd: 24px;
+	// Global component settings
+	--iconSizeMd: 24px;
+}

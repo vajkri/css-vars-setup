@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../logo.svg';
 import styles from './App.module.scss';
+import { Button } from '../../components';
 
 function Index() {
 	return (
@@ -14,6 +15,7 @@ function Index() {
 				<a className={styles.link} href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
 					Learn React
 				</a>
+				<Button>My Button</Button>
 			</header>
 		</div>
 	);

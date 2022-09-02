@@ -33,13 +33,13 @@ $spacing-properties: (
 ) !default;
 
 $spacing-sizes: (
-	'-2xs': $spacing2Xs,
-	'-xs': $spacingXs,
-	'-sm': $spacingSm,
-	'-md': $spacingMd,
-	'-lg': $spacingLg,
-	'-xl': $spacingXl,
-	'-2xl': $spacing2Xl,
+	'-2xs': var(--spacing2Xs),
+	'-xs': var(--spacingXs),
+	'-sm': var(--spacingSm),
+	'-md': var(--spacingMd),
+	'-lg': var(--spacingLg),
+	'-xl': var(--spacingXl),
+	'-2xl': var(--spacing2Xl),
 	'-none': 0,
 ) !default;
 

@@ -84,3 +84,26 @@ $colorSurfaceStateUtilityActive: $colorPrimary !default;
 // Scene colors
 $colorSceneNeutral: $colorNeutral !default;
 $colorSceneNeutralSubdued: $colorNeutral93 !default;
+
+:root {
+	--colorPrimary: #f36e24;
+
+	--colorNeutral: #001c24;
+	--colorNeutral93: #1b3036;
+
+	// Utility colors
+	--colorDark: #000000;
+	--colorDark50: #808080;
+	--colorDark10: #e6e6e6;
+	--colorLight: #ffffff;
+
+	// Text colors
+	--colorTextLight: var(--colorLight);
+
+	// Border colors
+	--colorBorderNeutralLayer1: var(--colorNeutral93);
+
+	// Scene colors
+	--colorSceneNeutral: var(--colorNeutral);
+	--colorSceneNeutralSubdued: var(--colorNeutral93);
+}
