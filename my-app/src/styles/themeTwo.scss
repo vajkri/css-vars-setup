@@ -2,7 +2,10 @@
 	/* THEME OVERRIDES */
 
 	// Tier 1
-	--colorPrimary: #d4f324;
+	--colorPrimaryHS: 325, 100%;
+	--colorPrimaryL: 65%;
+	--colorPrimary: hsl(var(--colorPrimaryHS), var(--colorPrimaryL));
+
 	--colorNeutral81: #66242f;
 
 	// Tier 2

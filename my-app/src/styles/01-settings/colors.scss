@@ -9,35 +9,28 @@
 	 */
 
 	// Brand colors
-	--colorPrimary: #f36e24;
-	--colorPrimary80: #f58b50;
-
-	--colorSecondary: #ac374b;
-	--colorSecondary80: #bd5f6f;
+	--colorPrimaryHS: 21, 90%;
+	--colorPrimaryL: 55%;
+	--colorPrimary: hsl(var(--colorPrimaryHS), var(--colorPrimaryL));
+	--colorPrimary80: hsl(var(--colorPrimaryHS), 64%);
 
 	--colorNeutral: #001c24;
 	--colorNeutral93: #1b3036;
-	--colorNeutral89: #24383e;
 	--colorNeutral85: #2d4146;
-	--colorNeutral81: #36494e;
-	--colorNeutral77: #3f5156;
-	--colorNeutral73: #49595e;
 	--colorNeutral40: #8a9699;
 
 	// Utility colors
 	--colorDark: #000000;
-	--colorDark50: #808080;
-	--colorDark10: #e6e6e6;
 	--colorLight: #ffffff;
 
 	// Overlays
-	--overlayShadeHover: 12%;
-	--overlayShadeFocus: 16%;
-	--overlayShadePressed: 20%;
+	--darkenHover: 12%;
+	--darkenFocus: 16%;
+	--darkenPressed: 20%;
 
-	--overlayTintHover: 12%;
-	--overlayTintFocus: 16%;
-	--overlayTintPressed: 32%;
+	--lightenHover: 12%;
+	--lightenFocus: 16%;
+	--lightenPressed: 32%;
 
 	// Misc
 	--colorOverlay: rgba(0, 0, 0, 0.5);
@@ -54,8 +47,6 @@
 	--colorTextLightSubdued: var(--colorNeutral40);
 	--colorTextPrimary: var(--colorPrimary);
 	--colorTextPrimarySubdued: var(--colorPrimary80);
-	--colorTextSecondary: var(--colorSecondary);
-	--colorTextSecondarySubdued: var(--colorSecondary80);
 
 	// Border colors
 	--colorBorderNeutralLayer1: var(--colorNeutral93);
@@ -72,15 +63,9 @@
 	--colorSurfacePrimarySubdued: var(--colorPrimary80);
 
 	--colorSurfaceStatePrimary: var(--colorPrimary);
-	//--colorSurfaceStatePrimaryHover: tintHover($colorSurfaceStatePrimary));
-	//--colorSurfaceStatePrimaryFocus: tintFocus($colorSurfaceStatePrimary));
-	//--colorSurfaceStatePrimaryPressed: tintPressed($colorSurfaceStatePrimary));
-
-	--colorSurfaceStateUtility: var(--colorLight);
-	//--colorSurfaceStateUtilityHover: shadeHover($colorSurfaceStateUtility));
-	//--colorSurfaceStateUtilityFocus: shadeFocus($colorSurfaceStateUtility));
-	//--colorSurfaceStateUtilityPressed: shadePressed($colorSurfaceStateUtility));
-	--colorSurfaceStateUtilityActive: var(--colorPrimary);
+	--colorSurfaceStatePrimaryHover: hsl(var(--colorPrimaryHS), calc(var(--colorPrimaryL) - var(--darkenHover)));
+	--colorSurfaceStatePrimaryFocus: hsl(var(--colorPrimaryHS), calc(var(--colorPrimaryL) - var(--darkenFocus)));
+	--colorSurfaceStatePrimaryPressed: hsl(var(--colorPrimaryHS), calc(var(--colorPrimaryL) - var(--darkenPressed)));
 
 	// Scene colors
 	--colorSceneNeutral: var(--colorNeutral);
